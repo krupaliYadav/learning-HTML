@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+      body {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      fieldset,
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">HTML FORM</h1>
+    <form>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <div>
+          <!-- input type: text -->
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            value="demo"
+            readonly
+            disabled
+          />
+        </div>
+        <div>
+          <!-- input type: password -->
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <div>
+          <!-- input type: email -->
+          <label for="email">Email: </label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div>
+          <!-- input type: number -->
+          <label for="number">Number: </label>
+          <input type="number" id="number" placeholder="Enter your number" />
+        </div>
+        <div>
+          <!-- input type: radio button -->
+          <label for="gender">Gender: </label>
+          <input type="radio" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Other Info</legend>
+
+        <div>
+          <!-- input type: check box -->
+          <label for="hobbies">Hobbies: </label>
+          <input type="checkbox" name="hobbies" id="hobby1" value="cricket" />
+          <label for="hobby1">Cricket</label>
+          <input type="checkbox" name="hobbies" id="hobby2" value="dance" />
+          <label for="hobby2">Dance</label>
+          <input type="checkbox" name="hobbies" id="hobby3" value="reading" />
+          <label for="hobby3">Reading</label>
+        </div>
+
+        <div>
+          <!-- input type for dropdown -->
+          <label for="country"> Fev Country: </label>
+          <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="🇨anada">Canada</option>
+            <option value="japan">Japan</option>
+          </select>
+        </div>
+
+        <div>
+          <!-- input type for datalist -->
+          <label for="state"> Select State: </label>
+          <input type="text" name="state" list="states" />
+          <datalist id="states">
+            <option value="maharashtra"></option>
+            <option value="gujarat"></option>
+            <option value="sikkim"></option>
+            <option value="panjab"></option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="textarea">Message</label>
+          <textarea name="textarea" id="textarea" cols="20" rows="5"></textarea>
+        </div>
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

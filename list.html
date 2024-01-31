@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML List</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+      body {
+        font-family: "Oswald", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ordered list -->
+    <h1>Ordered List &lt;ol&gt;</h1>
+    <p>
+      An order list use to create a list of items in specific order, typically
+      indicated by numbers
+    </p>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <!-- Ordered list style -->
+    <h2>Ordered List Style</h2>
+
+    <p>Default Decimal</p>
+    <ol type="1">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <p>Lowercase letters</p>
+    <ol type="a">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <p>Uppercase letters</p>
+    <ol type="A">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <p>lower roman</p>
+    <ol type="i">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <p>uppper roman</p>
+    <ol type="I">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <h1>Start Attibute</h1>
+    <ol start="10">
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ol>
+
+    <hr />
+    <hr />
+    <!-- Unordered list -->
+    <h1>Unordered List &lt;ul&gt;</h1>
+    <p>
+      An un order list use to create a list of items that are not in particular
+      order
+    </p>
+    <ul>
+      <li>Apple</li>
+      <li>Mongo</li>
+      <li>Orange</li>
+    </ul>
+
+    <!-- Unordered list style -->
+    <h2>Unordered List Style</h2>
+    <p>Disc (list-style-type: disc): Default style - filled circle</p>
+    <ul style="list-style-type: disc">
+      <li>Apple</li>
+      <li>Mongo</li>
+      <li>Orange</li>
+    </ul>
+    <p>Circle (list-style-type: circle): hollow circle</p>
+    <ul style="list-style-type: circle">
+      <li>Apple</li>
+      <li>Mongo</li>
+      <li>Orange</li>
+    </ul>
+    <p>Square (list-style-type: square): square</p>
+    <ul style="list-style-type: square">
+      <li>Apple</li>
+      <li>Mongo</li>
+      <li>Orange</li>
+    </ul>
+    <p>None (list-style-type: none): No bullet points</p>
+    <ul style="list-style-type: none">
+      <li>Apple</li>
+      <li>Mongo</li>
+      <li>Orange</li>
+    </ul>
+    <hr />
+    <hr />
+    <!-- Nested list -->
+    <h1>Nested List</h1>
+    <ul>
+      <li>
+        Fruits
+        <ol>
+          <li>
+            Apple
+            <ul>
+              <li>Red</li>
+              <li>Green</li>
+            </ul>
+          </li>
+          <li>Orange</li>
+          <li>Peare</li>
+        </ol>
+      </li>
+
+      <li>Vegetables</li>
+      <li>Meat</li>
+    </ul>
+    <hr />
+    <hr />
+    
+    <!--Navbar using list  -->
+    <h1>Navbar using list</h1>
+    <ul style="list-style-type: none; display: flex; gap: 15px">
+      <li><a href="https://picsum.photos/" target="_blank">Home </a></li>
+      <li><a href="https://picsum.photos/images" target="_blank">Lists</a></li>
+      <li><a href="https://www.lipsum.com/" target="_blank">About</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tag</title>
+    <style>
+      img {
+        max-width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Tag</h1>
+    <img
+      src="./public/cc1b20c4eaa7a48bd1b416eee8c01e57.jpg"
+      alt="emoji-image"
+      width="30%"
+      height="auto"
+      title="Test title"
+    />
+
+    <h2>Clickable Image</h2>
+    <a href="https://picsum.photos/" target="_blank">
+      <img
+        src="./public/thinking-emoji-smiley-face-Xl4BMMD-600.jpg"
+        alt="emoji-image"
+        width="30%"
+        height="auto"
+      />
+    </a>
+
+    <h3>Specific Part is clickable using map</h3>
+
+    <img
+      src="./public/pngtree-surprised-3d-emoji-png-image_2747763.jpg"
+      alt="emoji-image"
+      width="250"
+      height="200"
+      usemap="#map"
+    />
+
+    <map name="map">
+      <area
+        shape="rect",
+        coords="0,0,125,100",
+        href="https://picsum.photos/",
+        target="_blank"
+        alt="picsum link"
+      />
+
+      <!-- <area
+      shape="circle",
+      coords="200,150,50",
+      href="https://picsum.photos/",
+      target="_blank"
+      alt="picsum link"
+    /> -->
+    </map>
+
+    <h4>Picture Tag</h4>
+    <picture>
+        <source srcset="./public/cc1b20c4eaa7a48bd1b416eee8c01e57.jpg" type="image/jpg"/>
+        <source srcset="./public/pngtree-surprised-3d-emoji-png-image_2747763.jpg" type="image/jpg"/>
+        <img src="./public/thinking-emoji-smiley-face-Xl4BMMD-600.jpg" alt="emoji"/>
+    </picture>
+
+    <h4>Figure Tag it use for caption</h4>
+    <figure>
+        <img  src="./public/cc1b20c4eaa7a48bd1b416eee8c01e57.jpg" alt="emoji" width="30%" height="auto"/>
+        <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+            quaerat quidem quibusdam quod, quod, quod.
+        </figcaption>
+    </figure>
+  </body>
+</html>

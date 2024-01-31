@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Oswald", sans-serif;
+        background-color: rgb(221, 221, 221);
+      }
+      li,
+      p,
+      label {
+        letter-spacing: 0.06;
+        line-height: 1.6;
+        font-size: 1.2rem;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Header -->
+      <div class="logo" id="home">
+        <a href="#">
+          <img
+            src="./public/demo-icon-demo-147077326.webp"
+            alt="logo"
+            width="5%"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul style="list-style-type: none; display: flex; gap: 100px">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Desciption -->
+      <div class="hero_contain" >
+        <h1>I am Vinod Bahadur Thapa aka Thapa Technical</h1>
+        <p>
+          This website is all about Website Development, Technical, Tips and
+          Tricks, Designs Principle, Source Code sales and Programming videos in
+          the Hindi Language.
+        </p>
+        <button>See My Work</button>
+        <a href="https://www.youtube.com/@ThapaTechnical" target="_blank">
+          <button>Visit Youtube</button></a
+        >
+      </div>
+      <div class="hero_image">
+        <figure>
+          <img src="./public/images.png" alt="thambnail" />
+        </figure>
+      </div>
+    </main>
+    <!-- About Section  -->
+    <section class="about_section">
+      <div class="about_content">
+        <h2>ABOUT ME</h2>
+        <p>
+          Vinod Bahadur Thapa aka ThapaTechnical is a web developer and
+          Youtuber.
+        </p>
+        <p>
+          Thapatechnical want to help others by providing free videos on Web
+          Development and Schools/University important topics.
+        </p>
+        <p><b>My Coding Knowledge</b></p>
+
+        <div class="about_progress">
+          <label for="html">HTML CODE</label>
+          <input type="range" id="html" min="0" max="100" value="95" />
+          <label for="css">CSS CODE</label>
+          <input type="range" id="css" min="0" max="100" value="95" />
+          <label for="javascript">JAVASCRIPT CODE</label>
+          <input type="range" id="javascript" min="0" max="100" value="75" />
+          <label for="html">MERN CODE</label>
+          <input type="range" id="html" min="0" max="100" value="55" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="service_section" id="service">
+      <h2>Our Services</h2>
+      <div class="service_gallery" style="display: flex">
+        <figure>
+          <img
+            src="public/home delevery.jpg"
+            alt="home dilevery"
+            width="150px"
+            height="auto"
+          />
+          <figcaption><strong>Home Delivery</strong></figcaption>
+        </figure>
+        <figure>
+          <img
+            src="public/car service.png"
+            alt="car service"
+            width="150px"
+            height="auto"
+          />
+          <figcaption><strong>Car Delivery</strong></figcaption>
+        </figure>
+        <figure>
+          <img
+            src="public/customerService.jpg"
+            alt="Customer service"
+            width="160px"
+            height="auto"
+          />
+          <figcaption><strong>Customer service</strong></figcaption>
+        </figure>
+        <figure>
+          <img
+            src="public/maintain.jpg"
+            alt="maintainace service"
+            width="150px"
+            height="auto"
+          />
+          <figcaption><strong>Maintainace Service</strong></figcaption>
+        </figure>
+        <figure>
+          <img
+            src="public/service.jpg"
+            alt="available"
+            width="150px"
+            height="auto"
+          />
+          <figcaption><strong>Availablelity</strong></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- blogs -->
+    <section class="blog_section" id="blogs">
+      <h2>Our Blogs</h2>
+      <article>
+        <header>
+          <h4>Host a MERN Stack App on a VPS</h4>
+          <p>
+            Before pushing to github, do not forget to use environment variables
+            where it’s needed. Like for frontend, you might need to setup
+            environment variable for API_URL. Like for backend, you might need
+            to setup environment variable for database url.
+          </p>
+        </header>
+
+        <section>
+          <h4>Host a MERN Stack App on a VPS</h4>
+          <p>
+            Before pushing to github, do not forget to use environment variables
+            where it’s needed. Like for frontend, you might need to setup
+            environment variable for API_URL. Like for backend, you might need
+            to setup environment variable for database url.
+          </p>
+        </section>
+
+        <section>
+          <h4>Host a MERN Stack App on a VPS</h4>
+          <p>
+            Before pushing to github, do not forget to use environment variables
+            where it’s needed. Like for frontend, you might need to setup
+            environment variable for API_URL. Like for backend, you might need
+            to setup environment variable for database url.
+          </p>
+        </section>
+        <p>Thank You For Reading Till End.</p>
+      </article>
+    </section>
+
+    <!-- other blog link section -->
+    <section class="other_blog_link_section">
+      <p><strong>Hope You Like Our Other Blogs To.</strong></p>
+      <ul style="list-style-type: square">
+        <li>
+          <a href="https://www.rakiyaworld.com/blog" target="_blank"
+            >Blog for
+          </a>
+        </li>
+        <li>
+          <a href="https://www.rakiyaworld.com/blog" target="_blank"
+            >Blog for demo
+          </a>
+        </li>
+        <li>
+          <a href="https://www.rakiyaworld.com/blog" target="_blank"
+            >Blog for demo data</a
+          >
+        </li>
+        <li>
+          <a href="https://www.rakiyaworld.com/blog" target="_blank"
+            >Blog for demo
+          </a>
+        </li>
+        <li>
+          <a href="https://www.rakiyaworld.com/blog" target="_blank"
+            >Blog for</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- contac us section -->
+    <section class="contac_section" id="contact">
+      <h2>Fell free to contac us</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.21657347411!2d72.8022316743095!3d21.143777783819996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f23cab5a107%3A0x18f74eef27149002!2sSourrcecube%20Technologies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1706617989609!5m2!1sen!2sin"
+        width="600"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contac_us_form">
+      <form action="#">
+        <div>
+          <label for="name">Name📛: </label>
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="email">Email📧: </label>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div>
+          <label for="number">Mobile Number📱 : </label>
+          <input type="number" id="number" placeholder="Enter your number" />
+        </div>
+        <div>
+            <label for="textarea">Message🥡:</label>
+            <textarea name="textarea" id="textarea" cols="20" rows="5"></textarea>
+        </div>
+        <input type="submit" value="submit" />
+      </form>
+    </section>
+
+    <p><a href="#home">Go To Home</a></p>
+
+    <footer>
+        &copy; 2023 All rights reserved.
+    </footer>
+  </body>
+</html>
