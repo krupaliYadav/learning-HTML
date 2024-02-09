@@ -1,0 +1,34 @@
+/* rgb means red, green, blue */
+/* max value of color is 255 */
+/* rgba a stand for alpha which use for opacity(transperancy) of color it beetween 0-1 */
+/* color hunt for get more color with hexdesimal code */
+
+body{
+    background-color: lightgray;
+}
+h1 {
+  /* color: red;
+  color: rgb(255, 0, 0); */
+  color: rgba(255, 0, 0, 0.4);
+  /* this both are same */
+}
+
+.head{
+    color: blue;
+    color: rgb(0, 0, 255);
+    /* hexa decimal colour formate */
+    color: #0000ff;
+}
+
+p{
+    /* color: green,;
+    color: rgb(0, 255, 0); */
+    color: rgba(0, 255, 0, 0.5);
+}
+h4{
+    color: #5F0F40;
+}
+
+
+
+

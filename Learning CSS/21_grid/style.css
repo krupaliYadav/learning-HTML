@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.grid-container {
+  width: 80%;
+  background-color: rgb(19, 19, 19);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 3px 1px rgb(129, 127, 130);
+  display: grid;
+
+  /* it will expilicity means it will work only 2 rows bcz we define 2 rows that's why if items will incress then 3 row will be created but it will not take 250px  */
+
+  /* grid-template-rows: 250px 250px; */
+  /* OR */
+  /* grid-template-rows: repeat(2, 250px); */
+
+  /* so we will use implicit it will create new row with gievn size */
+  grid-auto-rows: 250px;
+
+  /* grid-template-columns: 250px 250px 250px; */
+  /* grid-template-columns: 1fr 2fr 3fr; */
+  /* OR */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* if we are using 1fr means it will give equally space to each colunm */
+
+  /* Here if we have more contain in div then we need to manage their size for it will work smothly in responsive */
+
+  /* min content means it will take place which length is content */
+  /* grid-template-columns: 1fr min-content repeat(1, 1fr); */
+
+  /* max contet means it will take place which content in one line   */
+  /* grid-template-columns: 1fr max-content repeat(1, 1fr); */
+
+  /* minmax here we can able to give min and max size which work nicely and it will work on only 2 colunm */
+  /* grid-template-columns: 1fr minmax(250px, 1fr) repeat(1, 1fr); */
+
+  /* it will for all columns */
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+  gap: 1px;
+  padding: 1px;
+
+  /* sapcing vertically with aline itmes */
+  /* align-items: center; */
+
+  /* justify content */
+  /* justify-items: center; */
+  /* justify-items: stretch; */
+  /* justify-items:baseline; */
+}
+
+
+/* make it responsive */
+@media (width < 999px) {
+  .grid-container{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.item_1 {
+  background-color: #643843;
+  /* change item 1 position  */
+
+  /* grid-row-start: 2;
+    grid-row-end: 3; */
+  /* OR */
+  /* grid-row: 2 /3; */
+
+  /* grid-column-start: 2;
+    grid-column-end: 3; */
+
+  /* grid-column: 2/3; */
+}
+
+.item_2 {
+  background-color: #85586f;
+}
+
+.item_3 {
+  background-color: #944e63;
+  /* grid-column: 2/4; */
+}
+
+.item_4 {
+  background-color: #b47b84;
+  /* change item 4 position  */
+
+  /* grid-row: 2/3;
+  grid-column: 3/4; */
+}
+
+.item_5 {
+  background-color: #caa6a6;
+}
+
+.item_6 {
+  background-color: #ffe7e7;
+}

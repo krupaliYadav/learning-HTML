@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* thier are 4 state of anchor tag
+ 1) a:link (before visit)
+ 2) a:visited( after visited)
+ 3) a:hover (when we hover on that)
+ 4) a:active (when click on it )
+
+ Need to follow sequence link, visited, hover, active 
+*/
+
+div{
+    text-align: center;
+    border: 1px  solid black;
+    width: 20%;
+    padding: 30px;
+    margin: auto;
+    background-color: rgb(222, 215, 215);
+}
+/* 
+a{
+    color: white;
+} */
+
+a:link{
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+}
+a:visited{
+    color:rgb(51, 18, 215);
+} 
+a:hover{
+    color: #436850;
+}
+
+a:active{
+    color: #5F0F40;
+}

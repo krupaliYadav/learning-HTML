@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prespective</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(85, 84, 84);
+        border: 10px solid rgb(17, 17, 17);
+        perspective: 1000px;
+      }
+
+
+      /* animation */
+      img {
+        width: 400px;
+        height: 300px;
+        animation: rotate 25s linear infinite;
+        /* transform-style: preserve-3d; */
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotateY(0deg);
+          /* transform: translateZ(0px); */
+        }
+        to {
+          transform: rotateY(360deg);
+          /* transform: translateZ(100px); */
+        }
+      }
+
+
+      /* transition */
+      /* img {
+        width: 400px;
+        height: 300px;
+        transition: all 10s linear;
+      }
+      img:hover {
+       transform: rotateY(180deg);
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../../image/0330.png_860.png" alt="" />
+    </div>
+  </body>
+</html>

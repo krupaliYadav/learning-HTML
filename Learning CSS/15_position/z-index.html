@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main_div {
+        height: 600px;
+        width: 800px;
+        position: relative;
+        left: 300px;
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(33, 28, 106, 0.6),
+          rgba(89, 180, 195, 0.6)
+        );
+      }
+
+      .child {
+        background-color: rgb(186, 115, 115);
+        border: 1px solid black;
+        color: rgb(2, 2, 2);
+        width: 100px;
+        /* margin: 10px; */
+        padding: 30px;
+        position: absolute;
+      }
+
+      .child_1{
+        z-index: 1;
+       }
+    </style>
+  </head>
+  <body>
+    <h1>CSS POSITION</h1>
+    <div class="main_div">
+      <div class="child child_1">Child 1</div>
+      <div class="child child_2">Child 2</div>
+      <div class="child child_3">Child 3</div>
+      <div class="child child_4">Child 4</div>
+      <div class="child child_5">Child 5</div>
+    </div>
+  </body>
+</html>

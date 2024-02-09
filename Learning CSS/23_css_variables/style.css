@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+Css variables use for  styling the website. These are used to make changes in one place and reflect across the entire site
+For exmaple if we are using white color on multiple element and we need to chnage that colur then we need to go each element and chnage it's time taken 
+so we can stor that color in in one variable and we just need to that that variable value not for each element.
+*/
+
+:root {
+  --white_color: white;
+  /* we can change form here */
+  /* --white_color: red; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.hero_heading {
+  position: absolute;
+  top: 30%;
+  color:var(--white_color);
+  left: 5%;
+  font-size: 4vw;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero_heading::before {
+  content: "\f521";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -40%;
+  left: -10px;
+  font-size: 35px;
+}
+
+.para {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  color: var(--white_color);
+  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.image {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  width: 25%;
+  filter: drop-shadow(0px 0px 2px rgb(255, 247, 247));
+}
+
+.image:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 5px rgb(255, 247, 247));
+}
+
+a {
+  display: block;
+  background-color: rgb(8, 7, 7);
+  padding: 1vw;
+  color:var(--white_color);
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+a:hover {
+  background-color: var(--white_color);
+  color: black;
+  transform: scale(1.1);
+}

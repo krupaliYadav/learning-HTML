@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* Fallback Fonts:give back option of font family */
+body{
+    background-color: hsl(0, 0%, 93%);
+    display: grid;
+    place-items: center;
+}
+
+div{
+    text-align: center;
+    width: 50%;
+  
+}
+h1{
+    font-family: "Jost", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-style: italic;
+    /* font-variant: small-caps; */
+}

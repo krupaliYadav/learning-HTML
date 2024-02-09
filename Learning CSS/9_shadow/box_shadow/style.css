@@ -1,0 +1,31 @@
+/* 
+  box-shadow: 10px(horizental offset)  10px(vertical offset) 8px(blur) -6px(spread) #333(color;
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main_heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section_box {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.4;
+  border: 1px solid black;
+  padding: 20px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(217, 216, 216, 0.2)
+  );
+  box-shadow: 10px  10px 8px -6px #959494;
+}
+
+

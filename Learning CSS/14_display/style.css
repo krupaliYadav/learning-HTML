@@ -1,0 +1,48 @@
+/* 
+Display:block : the block  value make the element  a block level element Block level elements create a new block formating context and take up 
+the fill width aviable,They start on a new line, pushing subsequent element below them
+
+new line start : They start on new line in the webpage layout
+full width: They often take entire width of  thire container
+No side by side: They didn't sit next to each other horizontely
+common examples:Include paragraph, heading, lists, and container
+*/
+
+
+/*
+Inline element: The inline value makes the element an inline-level element. inline elements only tale up as much width as necessary
+  inline element can apperare on the same line as other inline 
+  common examples: link span , em
+
+  NOTE: WE CAN'T ABLE TO GIVE HEIGHT AND WIDTH TO INLINE ELEMENT
+  we can give left and right padding  but not top and bottom padding.
+*/
+
+/*
+Inline:block element: The inline block value combies aspect of both block and inline. element
+*/
+
+
+.heading{
+    background-color: antiquewhite;
+}
+.para_2{
+    background-color:   lavenderblush;
+}
+
+.para_1{
+    background-color: aquamarine;
+    height: 50px;
+}
+a{
+    height: 50px; /* height not working in inline  elements */
+    margin: 10px;
+    background-color: burlywood;
+    /* display: inline-block; With the help of inline block  property we are able to give height and width to inline elements */
+    display: block; /*If we give  display:block then it will become like block level element and height and widht will work)*/
+}
+
+.tag{
+   background-color: rebeccapurple;
+   display: none; /*It  will be disapper*/
+}

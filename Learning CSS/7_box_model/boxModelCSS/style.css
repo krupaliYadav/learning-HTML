@@ -1,0 +1,28 @@
+div{
+    width: 800px;
+    background-color: antiquewhite;
+    padding: 20px;
+    letter-spacing: 0.6px;
+    word-spacing: 1px;
+    border: 2px solid black;
+    margin: auto;
+}
+
+
+/* if we not give box css then it will calulate all for exmaple
+   actual width: 800px;
+   padding: 20px;
+   border: 2px
+   so the width of  content 800 + 20*2 + 2*2   = 844
+   it's not good  so we use box model
+*/
+
+*{
+    /* by default we have content box which calculate total size including padding borader margin hight width */
+    /* by appying this the width of table will be maintain 800px */
+    box-sizing: border-box;
+    /* by apping this it avoid horizontal  scrollbar appear in page*/
+    margin: 0;
+    padding: 0;
+    
+}

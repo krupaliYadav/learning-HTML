@@ -1,0 +1,51 @@
+/* 
+It's appiled for each side (top, right, bottom, left)
+ margin: 10px;
+
+ -----------------------------------------------------------------------------------
+ margin: 10px 30px 52px; (3 values)
+ 
+ top: first value specify the margine on top side
+ right-left: Second value specify the margine on the right and left side.
+ bottom: Third  value specify the maringe of the Bottom side.
+ 
+ -----------------------------------------------------------------------------------
+ margin : 20px, 30px; (2 values)
+
+ top and bottom : First value specify the margin on top and bottom
+ right and left : Second value specify the margin on right and left
+ */
+
+*{
+    background-color: lightcyan;
+}
+.first_para{
+     background-color: rgb(236, 229, 229);
+     border: 1px solid black;
+     letter-spacing: 1.2px;
+     word-spacing: 1px;
+     padding: 10px;
+     /* margin: 200px; */
+     /* margin: 100px 50px; */
+     margin: 100px  50px 80px;
+}
+
+.second_para{
+    background-color: rgb(216, 216, 216);
+    border: 1px solid black;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+    padding: 10px;
+    /* we can also go with auto margin */
+    margin: auto;
+
+    /* we can go with - margin also */
+    /* margin-top: -150px;
+    margin-left: 10px; */
+}
+
+/* margin collapsing
+ex. if we are  having  two  div  then first div margine bottom is 30px and second div  margin top is 40px so it take 40px margine in between which
+ have grater margine it sholud take that margin it never sum of top and bottom margin
+*/
+

@@ -1,0 +1,50 @@
+
+
+/* absulte length */
+/* h1{
+    font-size: 54px;
+}
+p{
+    font-size: 30px;
+}
+li{
+    font-size: 15px;
+} */
+
+/* relative length */
+/* 100% = 16px
+1% = 6.25  */
+/* h1{
+    
+    font-size: 337.5%;
+}
+p{
+    font-size: 187.5%;
+}
+li{
+    font-size: 93.75%;
+} */
+
+/* em  */
+/* em is a unit of measurement that indicates size relative to the font size.
+ For example, 1em means "equal to the current font size", and 2em means 2 times the current font size */
+ /* em size is depend on  parent element fornt size*/
+
+ /* 1em = 16px */
+html{
+    font-size: 62.5%;
+}
+
+ h1{
+    
+    font-size: 3.375em;
+}
+p{
+    font-size: 1.875em;
+}
+li{
+    font-size: 0.9375em;
+}
+
+/* rem 1rem = 10px */
+/* The root value (or ‘root em’) represents the default font size. In HTML5

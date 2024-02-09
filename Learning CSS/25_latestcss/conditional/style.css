@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+:is, :has, :not, :where
+
+if we have
+ ul li a
+ ul li p
+ ul li h1{
+    color:red
+ }
+ -------------------------------------------------------------------------------
+ ul li :is(a, p, h1){
+    color:red
+ }
+
+*/
+
+:root {
+  --header-text: black;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* scroll-behavior: unset; */
+  scroll-behavior: smooth;
+}
+
+.main_header {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 50px;
+  background-color: #d8d9da;
+  color: var(--header-text);
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  z-index: 1000;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+  align-items: end;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+a {
+  font-size: large;
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero_section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(4, 350px);
+  /* container-name: main_div;
+  container-type: inline-size; */
+}
+
+.main_div {
+  background-color: black;
+  color: white;
+  position: relative;
+
+  /* perspective: 1000; */
+}
+
+
+.hero_heading {
+  position: absolute;
+  top: 30%;
+  color: white;
+  left: 5%;
+  font-size: 4vw;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  color: white;
+  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.parent {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+label,
+input {
+  color: white;
+  /* font-size: 100px; */
+}
+/* ------------------------------------------------------------Conditional Properties-------------------------------- */
+.parent:has([type= checkbox]:checked) label{
+  color: rgba(188, 188, 188 ,0.5);
+}
+
+input[type ="checkbox"]{
+  accent-color:  rgb(5, 223, 103);
+}
+
+.image {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  width: 25%;
+  /* animation: rotate 25s linear infinite; */
+}
+
+.main_div_1 {
+  position: relative;
+  /* background-color: #f1d4e5; */
+  background-color: #a7a3a6;
+}
+
+.hero_heading_1 {
+  position: absolute;
+  top: 30%;
+  color: black;
+  left: 30%;
+  font-size: 4vw;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.para_1 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  color: black;
+  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+img {
+  width: 270px;
+  height: 240px;
+  transition: all 5s linear;
+}
+
+.image_1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 25%;
+  
+  /* animation: rotate 25s linear infinite; */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+    /* transform: translateZ(0px); */
+  }
+  to {
+    transform: rotateY(360deg);
+    /* transform: translateZ(100px); */
+  }
+}
+
+/* ------------------------------------------------------------Conditional Properties-------------------------------- */
+:is(.main_div, .main_div_1):hover :is(.image, .image_1) img {
+  transform: rotateY(180deg);
+  /* transform: scale(1.1); */
+}

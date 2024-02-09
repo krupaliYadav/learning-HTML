@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* section {
+  width: 100%;
+  height: 100vh;
+  background-image:
+  linear-gradient(
+      rgba(239, 149, 149, 0.6),
+      rgba(239, 180, 149, 0.6),
+      rgba(239, 213, 149, 0.6),
+      rgba(235, 239, 149, 0.6)
+    ),
+    url(../../image/photo-1553095066-5014bc7b7f2d.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image:
+    linear-gradient(
+        rgba(33, 42, 62, 0.6),
+        rgba(59, 56, 56, 0.6),
+        
+        rgba(49, 91, 149, 0.6)
+      ),
+      url(../../image/electronic-creative-tools-smart-devices-600nw-2374472389.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+  }
+
+  div{
+
+     width: 400px;
+     height: auto;
+     /* margin: auto; */
+     letter-spacing: 1px;
+     word-spacing: 1px;
+     padding: 10px;
+     /* background-color: rgb(172, 172, 172); */
+     /* background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(172, 172, 172, 0.4)
+     ); */
+     color: rgb(177, 177, 177);
+  }
+  

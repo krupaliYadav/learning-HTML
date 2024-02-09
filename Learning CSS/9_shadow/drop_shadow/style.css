@@ -1,0 +1,18 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(240, 225, 225); */
+  }
+
+div{
+    /* display: flex;
+    place-content: center; */
+    margin: auto;
+    width: 300px;
+    height: auto;
+    /* box-shadow: 0px  0px 0px 10px #959494; */
+    /* if image is tranpernt then then we can not give  shadow to image so we use drop shadow */
+    filter: drop-shadow(0px  0px 10px rgb(255, 247, 247));
+}

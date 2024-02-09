@@ -1,0 +1,61 @@
+/*
+css combinators used to define realtionship between different element in HTML docment. 
+descendant selector (space) : Select an element that is descendant of another element.
+child selector (>): Select an element that is direct child of abother  element
+adjacent sibling selector ( +): Selects an element that is immediatly preceded by another element.
+general sibling selector (~): Selects all elements, that are sibiling of another element and share the same parents.
+universal selectors(*):selects all elements 
+*/
+
+
+.first_div{
+    width: 30%;
+    height: auto;
+    background-color: lightslategray;
+    ;
+}
+
+.second_div{
+    width: 30%;
+    height: auto;
+    background-color: lightslategray;
+}
+
+/*  descendant selector*/
+.first_div li{
+    color: #f3f3f3;
+}
+
+.second_div li{
+    color: green;
+    background-color: antiquewhite;
+}
+
+/* child selector (>) chlid of parent in can include grand child also */
+/* .second_div ul > li{
+    color: brown;
+} */
+
+/* child selector (>) chlid of parent  in can't include grand child*/
+/* .second_div > ul > li{
+    color: brown;
+} */
+
+/*adjacent sibling selector which give only one sibiling after taget selector */
+/*target the value first div in that target ul and then target li which after p tag */
+/* .first_div ul p + li{
+ color: blue;
+} */
+
+.first_div ul p ~ li{
+    color: blue;
+} 
+
+
+
+
+
+
+
+
+

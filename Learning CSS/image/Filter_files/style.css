@@ -1,0 +1,19 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+div{
+    margin: auto;
+    width: 300px;
+    height: auto;
+    /* filter: drop-shadow(0px  0px 10px rgb(255, 247, 247)); */
+    /* black and white */
+    /* filter: grayscale();  */
+
+    /* filter: blur(2px); */
+
+    filter: brightness(110%);
+}

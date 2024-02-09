@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+
+/* text-shadow: 2px(offset-x), 2px(offset-y) 1px(blur-radius) blue(color)*/
+body {
+  background-color: hsl(0, 0%, 93%);
+  display: grid;
+  place-items: center;
+}
+
+div {
+  text-align: center;
+  width: 50%;
+}
+h1 {
+  font-family: "Jost", sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-shadow: 2px 2px 20px #d33e79;
+  text-decoration-line: underline;
+  /* text-decoration-style: wavy; */
+  text-decoration-color: #5f0f40;
+  text-decoration-thickness: 3px;
+  text-transform: uppercase;
+}
+p {
+  font-weight: 600;
+  font-family: "Lora", serif;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.4;
+}
+
+/* pseudo element */
+p::first-letter{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+}

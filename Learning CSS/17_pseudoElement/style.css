@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.hero_heading {
+  position: absolute;
+  top: 30%;
+  color: white;
+  left: 5%;
+  font-size: 4vw;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* This for text */
+/* .hero_heading::before {
+  content: "let learn";
+  position: absolute;
+  top: -30%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5vw; 
+  text-transform: uppercase;
+  letter-spacing: 0.5vw; 
+  left: -5%;
+} */
+
+/* This for font awesome icon 
+ in this we need to import font awesome cdn link  into the head section of our html file
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;  
+  is must have. If you don't add it, your code will not work
+  */
+
+.hero_heading::before {
+  content: "\f521";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -40%;
+  left: -10px;
+  font-size: 35px;
+}
+
+.para {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  color: white;
+  width: 50%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+
+.para::first-letter {
+  font-size: 48px;
+  color: rgb(136, 186, 230);
+  font-weight: bold;
+}
+
+.para::first-line {
+  text-decoration: underline;
+}
+
+.para::selection {
+  background-color: rgb(32, 32, 32);
+}
+
+.image {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  width: 25%;
+  filter: drop-shadow(0px  0px 2px rgb(255, 247, 247));
+  
+  
+}
+
+.image:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px  0px 5px rgb(255, 247, 247));
+}
+
+a {
+  display: block;
+  background-color: rgb(8, 7, 7);
+  padding: 1vw;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
