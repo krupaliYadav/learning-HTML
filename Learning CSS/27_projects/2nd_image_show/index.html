@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image show</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+      }
+      .main_container {
+        width: 800px;
+        height: 600px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-image: url("../../image/0330.png_860.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: gallary 30s linear infinite;
+      }
+
+      @keyframes gallary {
+        0%{
+            background-image: url("../../image/0330.png_860.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        20% {
+          background-image: url("../../image/1000_F_453364342_blrRSdTLfQ5iR1dUuh7QEzMNuJM8hFi3.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        40% {
+          background-image: url("../../image/992422.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        60% {
+          background-image: url("../../image/computer.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        80% {
+          background-image: url("../../image/booog.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        100% {
+          background-image: url("../../image/flower-marigolds-3192686_640.webp");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_container"></div>
+  </body>
+</html>

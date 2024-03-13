@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clip Path</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img{
+        /* clip-path: polygon(8% 0, 100% 0%, 94% 100%, 0% 100%); */
+        /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+        /* clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%); */
+        clip-path: polygon(10% 0, 100% 0%, 86% 100%, 0 100%);
+
+
+
+        /* clip-path: polygon(0 0, 0 0 , 100% 100%); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clip Path Example</h1>
+    <div class="main">
+      <img src="../image/electronic-creative-tools-smart-devices-600nw-2374472389.webp" alt="clipPath" />
+    </div>
+  </body>
+</html>

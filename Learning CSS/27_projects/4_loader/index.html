@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+
+      .main_div {
+        width: 10rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: white;
+        position: relative;
+        animation: rotate 2s linear infinite reverse;
+      }
+
+      .main_div::after {
+        content: "";
+        position: absolute;
+        width: 9rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background-color: black;
+        z-index: 1;
+      }
+
+      @keyframes rotate {
+        100% {
+          rotate: 360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main_div"></div>
+  </body>
+</html>
